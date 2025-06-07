@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task-3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌐 Advanced Web Development</h1>
+    <p>Interactive, Responsive, and Dynamic Web Experience</p>
+  </header>
+
+  <main>
+    <!-- Quiz Section -->
+    <section class="card">
+      <h2>🧠 JavaScript Quiz</h2>
+      <div id="quiz">
+        <p id="question"></p>
+        <div id="options"></div>
+        <p id="quizResult"></p>
+        <button onclick="nextQuestion()">Next</button>
+      </div>
+    </section>
+
+    <!-- API Section -->
+    <section class="card">
+      <h2>🤣 Chuck Norris Joke Generator</h2>
+      <button onclick="fetchJoke()">Get a Joke</button>
+      <p id="jokeText"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Manish Kumar</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

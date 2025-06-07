@@ -1,0 +1,107 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #4e54c8;
+  --accent: #8f94fb;
+  --text: #333;
+  --background: #f9f9f9;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, var(--primary), var(--accent));
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header, footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #ffffffcc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+button {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--accent);
+}
+
+/* Quiz Styles */
+#options button {
+  display: block;
+  margin: 0.5rem 0;
+  background-color: #fff;
+  color: var(--text);
+  border: 1px solid var(--primary);
+}
+
+#options button:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+#quizResult {
+  margin-top: 0.75rem;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
